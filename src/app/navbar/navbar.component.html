@@ -1,0 +1,36 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1>Info Web</h1>
+      <span class="spacer"></span>
+      <span>{{ hours }}:{{ minutes }}:{{ seconds | number: '2.0' }}</span>
+      <button mat-button 
+              [ngClass]="isStarted ? 'stop-time' : 'start-time'"
+              (click)="toggleTimer()">
+        {{ isStarted ? 'Stop Time' : 'Start Time' }}
+      </button>
+        <img src="assets/attendancelogo.png" (click)="profileLogo()">
+
+      
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav opened="true" mode="side">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/dashboard/faculty">Faculty</a>
+        <a mat-list-item routerLink="/dashboard/attendanceAndLeave">Attendance And Leave</a>
+        <a mat-list-item routerLink="/dashboard/feedback">FeedBack</a>
+        <a mat-list-item routerLink="/dashboard/itAndSecurity">IT and Security</a>
+        <a mat-list-item routerLink="/dashboard/others">Others</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div style="height: 88vh;">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

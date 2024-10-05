@@ -1,0 +1,18 @@
+
+  /* dashboard.component.css */
+.navcontainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  app-navbar {
+    flex: 0 0 auto; /* Navbar height is fixed */
+  }
+  
+  .content {
+    flex: 1 1 auto; /* Content takes up remaining space */
+    overflow: auto; /* Ensures content is scrollable if it overflows */
+    padding: 16px; /* Adds some padding around the content */
+  }
+  

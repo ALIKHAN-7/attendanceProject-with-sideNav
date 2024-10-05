@@ -1,0 +1,23 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+  
+  .start-time {
+    background-color: green;
+    color: white;
+  }
+  
+  .stop-time {
+    background-color: red;
+    color: white;
+  }
+  img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+
+  }
+
+  mat-toolbar{
+    background-color: rgb(118, 119, 116);
+  }

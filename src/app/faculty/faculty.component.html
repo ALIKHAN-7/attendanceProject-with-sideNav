@@ -1,0 +1,87 @@
+<div class="card-container">
+    <mat-card class="utilization-card">
+      <mat-card-header>
+        <mat-card-title>
+          <h1>Utilization</h1>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="utilization-section">
+          <h2>Scheduled Hours %</h2>
+          <input type="checkbox">Utilized Hrs<br>
+          <input type="checkbox">Unutilized Hrs
+
+        </div>
+        <div class="utilization-section">
+          <h2>Overall Utilization %</h2>
+          <input type="checkbox">Utilized Hrs<br>
+          <input type="checkbox">Unutilized Hrs
+        </div>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="announcement-card">
+      <mat-card-header>
+        <mat-card-title>
+          <h1>Announcements</h1>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="announcement-section">
+          <h2>Hybrid Workplace Policy</h2>
+          <p>Hybrid Policy released-25th Aug 2023</p>
+        </div>
+        <div class="announcement-section">
+          <h2>Global Annual Records</h2>
+          <p>Have yuh seen this pictures?</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="training-events-card">
+      <mat-card-header>
+        <mat-card-title>
+          <h1>Training and Events</h1>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="training-events-section">
+          <h2>Upcoming Trainings</h2>
+          <p>March 2024</p>
+          <a href="">To Know More</a>
+        </div>
+        <div class="training-events-section">
+          <h2> Event Calender</h2>
+          <p>March 2024</p>
+          <a href="">To Know More</a>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div>
+    <mat-card class="timesheet-card">
+      <mat-card-header>
+        <mat-card-title>
+          <h1>TimeSheet</h1>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="timesheet-container">
+          <div class="calendar-grid">
+            <!-- Generate days 1 through 30 -->
+            <div *ngFor="let day of days" class="calendar-day">
+              {{ day }}
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="assets/timesheet.png" alt="Description of image">
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  
+  
+  
+  

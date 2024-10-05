@@ -1,0 +1,107 @@
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+    padding: 16px; 
+  }
+  
+  mat-card {
+    flex: 1 1 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .utilization-card {
+    background-color: #f5f5f5; 
+  }
+  
+  .utilization-section {
+    margin-bottom: 16px;
+  }
+  
+  .announcement-card {
+    background-color: #e1f1e2;
+  }
+  
+  .announcement-section {
+    margin-bottom: 16px;
+  }
+  
+  .training-events-card {
+    background-color: #e3f2fd; 
+  }
+  
+  .training-events-section {
+    margin-bottom: 16px;
+  }
+  
+  mat-card-header {
+    background-color: #ffffff; 
+    border-bottom: 1px solid #ddd; 
+  }
+  
+  mat-card-title h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  mat-card-content {
+    padding: 16px; 
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  p {
+    margin: 0;
+  }
+/* Style for the timesheet card */
+.timesheet-card {
+    background-color: #ffffff; /* White background for the card */
+    padding: 16px; /* Padding inside the card */
+  }
+  
+  /* Container for both grid and image */
+  .timesheet-container {
+    display: flex; /* Use flexbox to align items side by side */
+    gap: 16px; /* Space between grid and image */
+  }
+  
+  /* Grid layout for calendar */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for a week */
+    gap: 8px; /* Space between grid items */
+    flex: 1; /* Allow the grid to take 50% of the width */
+    max-width: 50%; /* Ensure grid takes 50% of the container width */
+  }
+  
+  /* Style for each day */
+  .calendar-day {
+    background-color: #f1f1f1; /* Light gray background */
+    border: 1px solid #ddd; /* Border around each day */
+    text-align: center; /* Center text horizontally */
+    padding: 13px; /* Padding inside each day box */
+    padding-bottom: 20px;
+    font-size: 16px; /* Font size for the day numbers */
+  }
+  
+  /* Container for image */
+  .image-container {
+    flex: 0 0 50%; /* Ensure image container takes 50% of the width */
+    max-width: 50%; /* Limit width to 50% */
+    position: relative;
+    left: 100px;
+  }
+  
+  .image-container img {
+    width: 400px; /* Make the image responsive */
+    height: 400px; /* Maintain aspect ratio */
+  }
+  
+  
+  
+  
